@@ -1,0 +1,189 @@
+//向上向下滑屏平滑
+.moveToTop {
+  -webkit-animation: moveToTop .6s ease both;
+  animation: moveToTop 3s ease both;
+}
+
+.moveFromBottom{
+  -webkit-animation: moveFromBottom .6s ease both;
+  animation: moveFromBottom .6s ease both;
+}
+
+@keyframes moveFromBottom  {
+  from{ }
+  to{ transform: translateY(0); }
+}
+
+.moveFromTop{
+  -webkit-animation: moveFromTop .6s ease both;
+  animation: moveFromTop .6s ease both;
+}
+@keyframes moveFromTop{
+  from{}
+  to{transform: translateY(0%);}
+}
+
+.moveToBottom{
+  -webkit-animation: moveToBottom .6s ease both;
+  animation: moveToBottom 3s ease both;
+}
+@keyframes moveToBottom {
+  from{}
+  to{transform: translateY(100%) scale(0.5);}
+}
+
+
+//第一屏文字动画
+.preCurrent .page1_fromLeft{
+  animation: page1_fromLeft 1s linear both;
+}
+
+@keyframes page1_fromLeft {
+  0%{
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.preCurrent .page1_fromRight{
+  animation: page1_fromRight 1s linear both;
+}
+@keyframes page1_fromRight {
+  0%{
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+
+//第二屏小圆动画
+.preCurrent .circle1{
+  animation: circle1 .5s linear both;
+}
+@keyframes circle1 {
+  0%{
+
+  }
+  100%{
+    transform: translateY(-320%) rotate(360deg);
+  }
+}
+
+.preCurrent .circle2{
+  animation: circle2 .5s linear both;
+}
+@keyframes circle2 {
+  0%{
+
+  }
+  100%{
+    transform: translate(-220%,-200%) rotate(360deg);
+  }
+}
+
+.preCurrent .circle3{
+  animation: circle3 .5s linear both;
+}
+@keyframes circle3 {
+  0%{
+
+  }
+  100%{
+    transform: translate(-190%,160%) rotate(360deg);
+  }
+}
+
+.preCurrent .circle4{
+  animation: circle4 .5s linear both;
+}
+@keyframes circle4 {
+  0%{
+
+  }
+  100%{
+    transform: translateY(260%);
+  }
+}
+
+.preCurrent .circle5{
+  animation: circle5 .5s linear both;
+}
+@keyframes circle5 {
+  0%{
+
+  }
+  100%{
+    transform: translate(190%,160%);
+  }
+}
+
+.preCurrent .circle6{
+  animation: circle6 .5s linear both;
+}
+@keyframes circle6 {
+  0%{
+
+  }
+  100%{
+    transform: translate(220%,-200%);
+  }
+}
+
+//第三屏动画
+.preCurrent  .rotatePic{
+  animation: rotatePic 1s linear both;
+}
+
+@keyframes rotatePic {
+  0%{
+
+  }
+  100%{
+    transform: rotateY(720deg);
+  }
+}
+
+//动画page4
+.preCurrent .scaling{
+  animation: scaling 1s linear both;
+}
+@keyframes scaling {
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+
+//音乐
+.music{
+  animation: musicRotate 2s linear infinite both;
+}
+@keyframes musicRotate {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(720deg);
+  }
+}
+
+
+//箭头
+.arrow{
+  animation: loopArrow 1s infinite;
+}
+@keyframes loopArrow {
+  0%{
+  }
+  100%{
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
